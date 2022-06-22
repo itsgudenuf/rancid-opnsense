@@ -6,7 +6,9 @@ modifications to the old clogin and pfrancid scripts
 
 To set this up (This is not a complete rancid step by step....)
 1. create a user on the firewall, like rancid.... add them to the admin group
-2. ssh to the firewall and remove the line with "resizewin" from .profile and .login files
+2. ssh to the firewall and remove the line with "resizewin" from .profile and .login files \
+  sed -i .bak '/resizewin/d' .login \
+  sed -i .bak '/resizewin/d' .profile 
 3. place the opn* files in the rancid bin directory
 4. add the following to rancid.types.conf \
   ##OPNsense support \
