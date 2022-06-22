@@ -9,7 +9,7 @@ To set this up (This is not a complete rancid step by step....)
 2. ssh to the firewall and remove the line with "resizewin" from .profile and .login files
 3. place the opn* files in the rancid bin directory
 4. add the following to rancid.types.conf
-  # OPNsense support
+  \# OPNsense support
   opnsense;script;opnrancid -d=1
   opnsense;login;opnlogin
 5. set up your .cloginrc like any other device
